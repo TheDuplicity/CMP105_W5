@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include "Framework/Input.h"
 #include "Framework/GameObject.h"
+#include "PiskelMan.h"
 #include "Zombie.h"
 #include "Mario.h"
 #include <string>
@@ -28,6 +29,6 @@ private:
 	Input* input;
 	Zombie enemyZombie;
 	Mario playerMario;
-	Animation zombieWalk, marioMoves;
-	sf::Texture zombieWalkTexture, marioMovesTexture;
+	PiskelMan theHERO;
+	sf::Texture zombieWalkTexture, marioMovesTexture, theCoolestTexture;
 };
