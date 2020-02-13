@@ -5,7 +5,7 @@ Zombie::Zombie() {
 		walk.addFrame(sf::IntRect((i * 55), 0, 55, 108));
 	}
 	walk.setFrameSpeed(1.f/10.f);
-	setAnim(&walk);
+	setCurrAnim(&walk);
 }
 
 Zombie::~Zombie() {

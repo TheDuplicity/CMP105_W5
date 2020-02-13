@@ -4,6 +4,7 @@
 #include "Framework/Input.h"
 #include "Framework/GameObject.h"
 #include "Zombie.h"
+#include "Mario.h"
 #include <string>
 #include <iostream>
 
@@ -26,6 +27,7 @@ private:
 	sf::RenderWindow* window;
 	Input* input;
 	Zombie enemyZombie;
-	Animation zombieWalk;
-	sf::Texture zombieWalkTexture;
+	Mario playerMario;
+	Animation zombieWalk, marioMoves;
+	sf::Texture zombieWalkTexture, marioMovesTexture;
 };

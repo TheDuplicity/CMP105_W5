@@ -19,16 +19,16 @@ void AnimObject::update(float dt) {
 void AnimObject::handleInput(float dt) {
 	setVelocity(sf::Vector2f(0, 0));
 	if (in->isKeyDown(sf::Keyboard::W)) {
-		velocity.y -= 1;
+		velocity.y -= 0.25;
 	}
 	if (in->isKeyDown(sf::Keyboard::S)) {
-		velocity.y += 1;
+		velocity.y += 0.25;
 	}
 	if (in->isKeyDown(sf::Keyboard::A)) {
-		velocity.x -= 1;
+		velocity.x -= 0.25;
 	}
 	if (in->isKeyDown(sf::Keyboard::D)) {
-		velocity.x += 1;
+		velocity.x += 0.25;
 	}
 	if (velocity.x != 0) {
 		if (velocity.x < 0) {
@@ -41,6 +41,6 @@ void AnimObject::handleInput(float dt) {
 	move(velocity);
 }
 
-void AnimObject::setAnim(Animation* newAnim) {
+void AnimObject::setCurrAnim(Animation* newAnim) {
 	currentAnim = newAnim;
 }

@@ -11,7 +11,7 @@ public:
 	~AnimObject();
 	void handleInput(float dt);
 	void update(float dt);
-	void setAnim(Animation* newAnim);
+	void setCurrAnim(Animation* newAnim);
 	void setInput(Input* setIn) { in = setIn; };
 
 };
