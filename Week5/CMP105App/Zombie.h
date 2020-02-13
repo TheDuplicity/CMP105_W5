@@ -1,15 +1,14 @@
 #pragma once
-#include "Framework/GameObject.h"
-#include "Framework/Animation.h"
-class Zombie: public GameObject{
+#include "AnimObject.h"
+class Zombie: public AnimObject{
 
 
 public:
 	Animation walk;
-	Animation* currentAnim;
+
 	Zombie();
-	~Zombie();
-	
+	~Zombie();	
+	void handleInput(float dt);
 	void update(float dt);
 
 };

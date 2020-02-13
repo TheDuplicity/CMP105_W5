@@ -36,6 +36,12 @@
     <ClCompile Include="Zombie.cpp">
       <Filter>Framework</Filter>
     </ClCompile>
+    <ClCompile Include="Mario.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimObject.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.txt">
@@ -59,6 +65,12 @@
       <Filter>Framework</Filter>
     </ClInclude>
     <ClInclude Include="Zombie.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Mario.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimObject.h">
       <Filter>Framework</Filter>
     </ClInclude>
   </ItemGroup>
